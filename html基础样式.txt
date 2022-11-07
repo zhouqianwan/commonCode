@@ -1,0 +1,81 @@
+font-size ————字号大小
+display——————行内块（inline-block）
+font-weight—————字体粗细(400)
+text-decoration——下划线(none   under-line    line-through)
+font-style————斜体文本（normal   italic）
+list-style————去掉ul标签前面的小圆点
+
+
+常见的块级元素：div  p  h1~h6   ul   table   hr   header   footer   aside   section
+常见的行内元素：span   img   a   lable   em   textarea   select   button  
+常见的行内块元素： img   input   td
+
+属性选择器：  .box[id="123"]
+
+vue  中装包出错，使用              --legacy-peer-deps
+
+https://blog.csdn.net/hlanting/article/details/78348831
+
+权重：
+继承/*——————————————0
+li  p  div a ————————————1
+.box  .nav （class） /:hover  :focus———10
+id———————————————100
+style=""—————————————1000
+！important——————————9999999
+
+背景图片的写法：
+background：skyblue  url(123.jpg)  no-repeat   fixed  center top;
+获取内嵌式属性值
+window.getComputedStyle(body, null).getPropertyValue('font-size');
+
+获取含有type属性的标签：input[type="checkbox"]
+
+textarea禁止拉伸：resize:none;
+
+js的窗口加载事件：
+ window.addEventListener('load', function() {
+ 
+            alert(22);
+})
+ document.addEventListener('DOMContentLoaded', function() {
+            console.log(11);
+})
+
+jquery的窗口加载事件：
+$(function(){
+    
+})
+
+
+\r 是回车，return
+\n 是换行，newline
+
+
+				数据库的基本操作：
+进入：mysql -uroot -p111111
+显示数据库：show databases;
+使用数据库：use 某个数据库名;
+显示有哪些表：show tables;
+查询数据：
+	在某表中查询所有的数据 ：select * from 表名 
+	在某表中查询某字段的数据 ：select 字段名 from 表名 
+插入数据：
+	向某表中插入一行数据：insert into 表名 (id,uname) values(2,'zhangsan')
+修改表中的数据：
+	更新一行数据中的一列：updata 表名 set passward = "123456" where id = 2;
+	更新一函数据中的一列：updata 表名  status = 1,passward="123456" where id = 3
+删除表中的某行：
+	delete from 表名 where id = 2;
+
+
+and:表示两个条件都得满足   <==> &&
+or:表示只满足其中一个条件即可   <==> ||
+
+排序 :order by 
+	desc:降序
+	ase:升序（默认值，不用写）
+count(*):查询返回查询结果的总条数
+	select count(*) as total from 表名 ;
+as:设置别名
+
