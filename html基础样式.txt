@@ -51,6 +51,8 @@ $(function(){
 \r 是回车，return
 \n 是换行，newline
 
+镜像：$ npm install -g cnpm --registry=https://registry.npmmirror.com
+
 
 				数据库的基本操作：
 进入：mysql -uroot -p111111
